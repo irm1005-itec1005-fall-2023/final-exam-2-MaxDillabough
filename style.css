@@ -1,69 +1,237 @@
-/*
- * CSS File for the solution
- * Final Exam
- * You got this!
- */
-
-/*
- * COLOUR PALETTE
- *
- * YOU DO NOT NEED TO USE THESE COLOURS, BUT YOU CAN IF YOU WANT TO
- *
- * #cdb4db - Lavender Purple
- * #ffc8dd - Pink
- * #ffafcc - Light Pink
- * #bde0fe - Light Blue
- * #a2d2ff - Light Blue
- * #0c0a3e - Dark Purple
- * #797979 - Grey
- *
- * https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff
- */
-
-/*
- * FOR YOUR DESKTOP VIEWPORT I WOULD RECOMMEND THE FOLLOWING MEDIA QUERY
- *
- * @media screen and (min-width: 800px) {
- *    ... your styles here ...
- * }
- */
-
- html {
-  font-size: 1.0rem;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-
-  background-color: #f7ead7;
-}
-
-/*
- * SR-ONLY
- */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
+/* Resetting default margin and padding */
+body, h1, h2, h4, h5, h6, p {
+  margin: 0;
   padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
- }
+}
 
+/* Styling header */
+header {
+  background-color: lavender;
+  padding: 20px;
+}
 
-/*
- * SHARED STYLES
- */
+.logo-top {
+ display: block;
+ margin: 0 auto;
+ max-width: 60rem;
+}
+
+.contact-top {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background-color: lightpink;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling main content */
+main {
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.top-page {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .page-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 1.0rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
-/*
- * ADD YOUR STYLES HERE
- */
+.about-me-container {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: pink;
+  border-radius: 5%;
+}
+
+.about-pic {
+  display: block;
+  margin: 0 auto;
+  border-radius: 90%; /* To make the image round */
+}
+
+.me-content {
+  margin-top: 20px;
+  background-color: lavenderblush;
+}
+
+.contact-about-me {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background-color: lavenderblush;
+  color: purple;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: nowrap; /* Allows items to wrap to the next line if needed */
+  justify-content: space-around; /* Distributes items evenly with space around them */
+  align-items: flex-start; /* Aligns items to the start of the cross axis */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Adjust individual work items within the flex container */
+.work-1, .work-2, .work-3, .work-4 {
+  flex: 1 0 200px; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: 200px; /* Maximum width of the flex items */
+  margin-bottom: 20px;
+  margin-right: 10px; /* Margin between work items */
+}
+
+
+.work-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.work-container h3 {
+  margin-bottom: 10px;
+}
+
+.work-1, .work-2, .work-3, .work-4 {
+  margin-bottom: 20px;
+}
+
+.work-1 img, .work-2 img, .work-3 img, .work-4 img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.work-1 h4, .work-2 h5, .work-3 h6, .work-4 h7 {
+  margin-top: 10px;
+}
+
+.work-1 p, .work-2 p, .work-3 p, .work-4 p {
+  margin-bottom: 5px;
+}
+
+/* Styling footer */
+footer {
+  background-color: lavender;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container img {
+  margin-right: 10px;
+}
+
+/* General styles */
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Resetting default margin and padding */
+body, h1, h2, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  align-self: center;
+}
+
+/* Your existing CSS styles... */
+
+/* Responsive styles using media queries */
+
+/* For mobile devices */
+@media screen and (max-width: 767px) {
+  /* Header styles */
+  .logo-top {
+ 
+  }
+
+  .contact-top {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    font-size: 14px; /* Adjust button font size */
+  }
+
+  /* Main content styles */
+  .top-page {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .page-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  .about-me-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  /* Work section styles */
+  .work-container {
+    text-align: center;
+    margin-bottom: 20px;
+
+  }
+
+  .work-1,
+  .work-2,
+  .work-3,
+  .work-4 {
+    width: 5rem;
+    margin: 0 auto 20px;
+    font-size: 14px; /* Adjust font size for smaller screens */    
+  }
+  .projectimg {
+    width: 5rem;
+  }
+  /* Contact section styles */
+  .contact-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  /* Footer styles */
+  footer {
+    background-color: lavender;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
