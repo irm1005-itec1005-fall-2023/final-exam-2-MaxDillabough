@@ -170,10 +170,7 @@ h3 {
 /* For mobile devices */
 @media screen and (max-width: 767px) {
   /* Header styles */
-  .logo-top {
- 
-  }
-
+  
   .contact-top {
     display: block;
     margin: 10px auto;
