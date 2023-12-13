@@ -75,16 +75,15 @@ main {
 
 .work-container {
   display: flex;
-  flex-wrap: nowrap; /* Allows items to wrap to the next line if needed */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
   justify-content: space-around; /* Distributes items evenly with space around them */
   align-items: flex-start; /* Aligns items to the start of the cross axis */
-  text-align: center;
   margin-bottom: 20px;
 }
 
 /* Adjust individual work items within the flex container */
 .work-1, .work-2, .work-3, .work-4 {
-  flex: 1 0 200px; /* Flex-grow, flex-shrink, flex-basis */
+  flex: 1 0 20px; /* Flex-grow, flex-shrink, flex-basis */
   max-width: 200px; /* Maximum width of the flex items */
   margin-bottom: 20px;
   margin-right: 10px; /* Margin between work items */
@@ -92,7 +91,7 @@ main {
 
 
 .work-container {
-  text-align: center;
+  text-align: ;
   margin-bottom: 20px;
 }
 
@@ -160,7 +159,7 @@ body, h1, h2, h4, h5, h6, p {
 }
 
 h3 {
-  align-self: center;
+  text-align: center;
 }
 
 /* Your existing CSS styles... */
@@ -170,7 +169,7 @@ h3 {
 /* For mobile devices */
 @media screen and (max-width: 767px) {
   /* Header styles */
-  
+
   .contact-top {
     display: block;
     margin: 10px auto;
